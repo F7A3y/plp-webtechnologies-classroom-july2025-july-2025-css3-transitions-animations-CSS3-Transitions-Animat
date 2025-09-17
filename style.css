@@ -1,0 +1,37 @@
+/* Part 1: Button styling with transition */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+button:hover {
+  background-color: #45a049;
+}
+
+/* Part 1: Box with bounce animation */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #2196f3;
+  margin: auto;
+  border-radius: 8px;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused; /* start paused */
+}
+
+/* Keyframe animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
